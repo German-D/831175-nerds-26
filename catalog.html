@@ -36,6 +36,71 @@
       <!-- Красный блок-->
       </div>
     </section>
+    <section>
+      <h2>Каталог</h2>
+      <form method="get"
+            action="#">
+        <fieldset>
+          <legend>Сетка:</legend>
+          <ul>
+            <li>
+              <input type="radio" name="Адаптивная" id="adaptive" checked>
+              <label for="adaptive">
+                Адаптивная
+              </label>
+            </li>
+            <li>
+              <input type="radio" name="Фиксированная" id="fixed">
+              <label for="fixed"">
+              Фиксированная
+              </label>
+            </li>
+            <li>
+              <input type="radio" name="Резиновая" id="rubber">
+              <label for="rubber">
+                Резиновая
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Особенности:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="Слайдер" id="slider" checked>
+              <label for="slider">
+                Слайдер
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" name="Блок преимуществ" id="advantage">
+              <label for="advantage">
+                Блок преимуществ
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" name="Новости" id="news" checked>
+              <label for="news">
+                Новости
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" name="Галерея" id="gallery">
+              <label for="gallery">
+                Галерея
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" name="Корзина" id="cart">
+              <label for="cart">
+                Корзина
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
+    </section>
   <section>
     <div>
     <h2>Примеры работ</h2>
@@ -82,7 +147,7 @@
       <input id="user-name" type="text"
              name="name" placeholder="Имя Фамилия">
       <label for="user-email">Ваш e-mail</label>
-      <input id="user-email" type="text"
+      <input id="user-email" type="email"
              name="email" placeholder="email@example.com">
       <label for="user-text">Текст письма</label>
       <textarea name="text" id="user-text" placeholder="в свободной форме" cols="30" rows="10">
