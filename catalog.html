@@ -44,19 +44,19 @@
           <legend>Сетка:</legend>
           <ul>
             <li>
-              <input type="radio" name="Адаптивная" id="adaptive" checked>
+              <input type="radio" name="site_type" id="adaptive" checked>
               <label for="adaptive">
                 Адаптивная
               </label>
             </li>
             <li>
-              <input type="radio" name="Фиксированная" id="fixed">
-              <label for="fixed"">
+              <input type="radio" name="site_type" id="fixed">
+              <label for="fixed">
               Фиксированная
               </label>
             </li>
             <li>
-              <input type="radio" name="Резиновая" id="rubber">
+              <input type="radio" name="site_type" id="rubber">
               <label for="rubber">
                 Резиновая
               </label>
@@ -67,31 +67,31 @@
           <legend>Особенности:</legend>
           <ul>
             <li>
-              <input type="checkbox" name="Слайдер" id="slider" checked>
+              <input type="checkbox" name="options" id="slider" checked>
               <label for="slider">
                 Слайдер
               </label>
             </li>
             <li>
-              <input type="checkbox" name="Блок преимуществ" id="advantage">
+              <input type="checkbox" name="options" id="advantage">
               <label for="advantage">
                 Блок преимуществ
               </label>
             </li>
             <li>
-              <input type="checkbox" name="Новости" id="news" checked>
+              <input type="checkbox" name="options" id="news" checked>
               <label for="news">
                 Новости
               </label>
             </li>
             <li>
-              <input type="checkbox" name="Галерея" id="gallery">
+              <input type="checkbox" name="options" id="gallery">
               <label for="gallery">
                 Галерея
               </label>
             </li>
             <li>
-              <input type="checkbox" name="Корзина" id="cart">
+              <input type="checkbox" name="options" id="cart">
               <label for="cart">
                 Корзина
               </label>
@@ -140,18 +140,22 @@
   <section class="visually-hidden">
     <h2>Напишите нам</h2>
     <a href="#"><img src="img/close-cross.svg" alt="Закрыть форму" width="21" height="21"></a>
-    <form method="post"
-          action="#">
-
-      <label for="user-name">Ваше имя:</label>
-      <input id="user-name" type="text"
-             name="name" placeholder="Имя Фамилия">
-      <label for="user-email">Ваш e-mail</label>
-      <input id="user-email" type="email"
-             name="email" placeholder="email@example.com">
-      <label for="user-text">Текст письма</label>
-      <textarea name="text" id="user-text" placeholder="в свободной форме" cols="30" rows="10">
+    <form method="post" action="#">
+      <div>
+        <label for="user-name">Ваше имя:</label>
+        <input id="user-name" type="text"
+               name="name" placeholder="Имя Фамилия">
+      </div>
+      <div>
+        <label for="user-email">Ваш e-mail</label>
+        <input id="user-email" type="email"
+               name="email" placeholder="email@example.com">
+      </div>
+      <div>
+        <label for="user-text">Текст письма</label>
+        <textarea name="text" id="user-text" placeholder="в свободной форме" cols="30" rows="10">
       </textarea>
+      </div>
       <button type="submit">Отправить</button>
     </form>
   </section>
