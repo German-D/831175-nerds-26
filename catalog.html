@@ -3,14 +3,17 @@
 <head>
   <meta charset="utf-8">
   <title>Дизайн студия: «Нёрдс»</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header>
-  <nav>
-      <a href="index.html">
+  <nav class="main-navigation">
+      <a class="main-header-logo" href="index.html">
         <img src="img/nerds-logo.svg" alt="Логотип Нёрдс" width="160" height="65">
       </a>
-    <ul>
+    <ul class="site-navigation">
       <li><a href="#">Студия</a></li>
       <li><a href="#">Клиенты</a></li>
       <li><a href="#">Магазин</a></li>
@@ -36,7 +39,7 @@
       <!-- Красный блок-->
       </div>
     </section>
-    <section>
+    <section class="filters">
       <h2>Каталог</h2>
       <form method="get"
             action="#">
@@ -137,7 +140,8 @@
     </section>
   </div>
   </div>
-  <section class="visually-hidden">
+  <!-- Форма отправки -->
+  <section class="visually-hidden form-offer">
     <h2>Напишите нам</h2>
     <a href="#"><img src="img/close-cross.svg" alt="Закрыть форму" width="21" height="21"></a>
     <form method="post" action="#">
@@ -163,14 +167,16 @@
   </section>
 </main>
 <footer>
-  <ul>
-    <li><a href="#"><img src="img/vk-icon.svg" alt="vk" width="79" height="79"></a></li>
-    <li><a href="#"><img src="img/fb-icon.svg" alt="fb" width="79" height="79"></a></li>
-    <li><a href="#"><img src="img/insta-icon.svg" alt="instagram" width="79" height="79"></a></li>
-  </ul>
-  <div>
-    <p>Давайте дружить, это выгодно!</p>
-    <p>Скидка 10% для друзей из социальных сетей.</p>
+  <div class="footer-social">
+    <ul>
+      <li><a class="social-button" href="#"><img src="img/vk-icon.svg" alt="vk" width="79" height="79"></a></li>
+      <li><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="fb" width="79" height="79"></a></li>
+      <li><a class="social-button" href="#"><img src="img/insta-icon.svg" alt="instagram" width="79" height="79"></a></li>
+    </ul>
+  </div>
+  <div >
+    <p class="footer-friendship">Давайте дружить, это выгодно!</p>
+    <p class="footer-discont">Скидка 10% для друзей из социальных сетей.</p>
   </div>
 </footer>
 </body>
