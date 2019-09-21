@@ -79,7 +79,7 @@ display: none;
   font-size: 24px;
   line-height: 1.25;
   font-weight: bold;
-  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .catalog p {
@@ -172,12 +172,14 @@ footer .social-button:active {
 
 .filters li {
   line-height: 1.5;
-  color: #283136;
+  color: #4d4d4d;
+  opacity: 0.4;
 }
 
 .filters li:hover {
+  opacity: 1;
   line-height: 1.5;
-  color: black;
+  color: #283136;
 }
 
 .filters button {
@@ -192,7 +194,9 @@ footer .social-button:active {
 
 .filters button:active {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-  background-color: #d5d5d5;
+  background-color: color: rgba(0, 0, 0, 0.3);
+  opacity: 0.3;
+  line-height: 1.13;
 }
 
 
