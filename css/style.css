@@ -11,15 +11,20 @@ body {
   background-color: #ffffff;
 }
 
-a {
-  text-decoration: none;
+header {
+  background-color: #eeeeee;
 }
 
-h1 {
-  font-size: 55px;
-  font-weight: 500;
-  line-height: 1;
+footer {
+  background-color: white;
 }
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+
 /* Скрываю форму */
 .visually-hidden {
 display: none;
@@ -31,8 +36,42 @@ display: none;
   line-height: 1.88;
 }
 
-.site-navigation {
+.site-navigation,
+.filters ul {
   list-style: none;
+}
+
+.main-navigation a:hover {
+  color: #fb565a ;
+}
+
+.main-navigation a:active {
+  opacity: 0.3;
+}
+
+.active-page{
+  padding-bottom: 12px;
+  border-bottom: 2px solid #fb565a;
+}
+
+.main-header-logo:active {
+  opacity: 0.3;
+}
+
+.main-header-logo:hover {
+  opacity: 0.3;
+}
+
+.catalog-h1 {
+  margin: 0px;
+  height: 48px;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+  background-color: #eeeeee;
 }
 
 /* Главная. Каталог */
@@ -40,35 +79,78 @@ display: none;
   font-size: 24px;
   line-height: 1.25;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .catalog p {
   font-size: 16px;
+  color: #283136;
 }
 
 .catalog a {
   line-height: 1.13;
   color: white;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
-/*Задаю бэкгрануд кнопкам «Заказать»*/
+/*Задаю бэкгрануд и состояния кнопкам «Заказать» на главной*/
 .catalog-sites-offer {
   background-color: #fb565a;
+}
+
+.catalog-sites-offer:hover {
+  background-color: #e74246;
+}
+
+.catalog-sites-offer:active {
+  background-color: #d7373b;
+  opacity: 0.3;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .catalog-apps-offer {
   background-color: #00ca74;
 }
 
+.catalog-apps-offer:hover {
+  background-color: #00bc6c;
+}
+
+.catalog-apps-offer:active {
+  background-color: #00aa62;
+  opacity: 0.3;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+}
+
 .catalog-pres-offer {
   background-color: #efc84a;
 }
 
-/* Задаю бэкгрануд кнопкам Соцсетям */
+.catalog-pres-offer:hover {
+  background-color: #efc84a;
+}
+
+.catalog-pres-offer:active {
+  background-color: #e5a722;
+  opacity: 0.3;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+}
+
+/* Задаю бэкгрануд и состояние кнопкам Соцсетям */
 footer .social-button {
   background-color: #e1e1e1;
 }
+
+footer .social-button:hover {
+  background-color: #e74246;
+}
+
+footer .social-button:active {
+  background-color: #d7373b;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+}
+
 
 .footer-friendship {
   font-size: 36px;
@@ -78,6 +160,7 @@ footer .social-button {
 
 .footer-discont {
   line-height: 1.38;
+  color: #444444;
 }
 
 /* Фильтры в каталоге */
@@ -87,9 +170,14 @@ footer .social-button {
   line-height: 1.67;
 }
 
-.filters label {
+.filters li {
   line-height: 1.5;
   color: #283136;
+}
+
+.filters li:hover {
+  line-height: 1.5;
+  color: black;
 }
 
 .filters button {
@@ -97,6 +185,16 @@ footer .social-button {
   font-weight: 500;
   line-height: 1.13;
 }
+
+.filters button:hover {
+  background-color: #dfdfdf;
+}
+
+.filters button:active {
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  background-color: #d5d5d5;
+}
+
 
 /* Стили формы заказа */
 .form-offer h2 {
@@ -115,6 +213,35 @@ footer .social-button {
   font-weight: 500;
   line-height: 1.13;
 }
+
+.form-offer input {
+  width: 360px;
+  height: 50px;
+  border: solid 2px #d7dcde;
+}
+
+.form-offer input:hover {
+  border: solid 2px #b4b9bb;
+}
+
+.form-offer input:focus {
+  border: solid 2px #000000;
+}
+
+.close-cross {
+  opacity: 0.3;
+}
+
+.close-cross:hover {
+  opacity: 1;
+}
+
+.close-cross:active {
+  opacity: 0.1;
+}
+
+
+
 
 
 
