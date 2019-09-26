@@ -3,35 +3,40 @@
   <head>
     <meta charset="utf-8">
     <title>Дизайн студия: «Нёрдс»</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-  <header>
-    <nav class="main-navigation">
+  <header class="main-header">
+    <nav class="main-navigation container">
       <a class="main-header-logo">
         <img src="img/nerds-logo.svg" alt="Логотип Нёрдс" width="160" height="65">
       </a>
       <ul class="site-navigation">
         <li><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
-        <li><a href="#">Магазин</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
-      <div>
-      <img src="img/cart-icon.svg" alt="Корзина" width="15" height="15">
-      <a href="#">Корзина</a>
-      </div>
+        <div class="cart">
+          <div class="cart-img">
+            <img src="img/cart-icon.svg" alt="Корзина" width="15" height="15">
+          </div>
+          <div>
+            <a href="#">Корзина</a>
+          </div>
+        </div>
     </nav>
   </header>
-  <main>
+  <main class="container">
     <h1 class="visually-hidden">Дизайн студия: «Нёрдс»</h1>
-    <section>
-      <h2>Долго, дорого, скурпулёзно.</h2>
+    <section class="slider">
+      <h2 class="center">Долго, дорого, скурпулёзно.</h2>
       <!-- Красный блок-->
     </section>
     <section class="catalog">
-      <h2>Каталог</h2>
+      <h2 class="visually-hidden">Каталог</h2>
       <div class="catalog-sites">
         <a href="#">
         <img src="img/web.png" alt="Веб сайты" width="300" height="146">
@@ -63,9 +68,7 @@
         <a class="catalog-pres-offer" href="#">Заказать</a>
       </div>
     </section>
-    <section>
-      <!-- Красный блок-->
-    </section>
+    <!-- Форма-->
     <section class="visually-hidden form-offer">
       <h2>Напишите нам</h2>
       <a class="close-cross" href="#"><img src="img/close-cross.svg" alt="Закрыть форму" width="21" height="21"></a>
@@ -91,18 +94,18 @@
     </form>
     </section>
   </main>
-  <footer>
-    <div class="footer-social">
-    <ul>
-      <li><a class="social-button" href="#"><img src="img/vk-icon.svg" alt="vk" width="79" height="79"></a></li>
-      <li><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="fb" width="79" height="79"></a></li>
-      <li><a class="social-button" href="#"><img src="img/insta-icon.svg" alt="instagram" width="79" height="79"></a></li>
+  <footer class="main-footer">
+    <div class="container">
+    <ul class="footer-social">
+      <li><a class="social-button" href="#"><img src="img/vk-icon.svg" alt="vk" width="26" height="15"></a></li>
+      <li><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="fb" width="12" height="22"></a></li>
+      <li><a class="social-button" href="#"><img src="img/insta-icon.svg" alt="instagram" width="21" height="21"></a></li>
     </ul>
-    </div>
-    <div >
+    <div class="footer-text">
       <p class="footer-friendship">Давайте дружить, это выгодно!</p>
      <p class="footer-discont">Скидка 10% для друзей из социальных сетей.</p>
    </div>
+    </div>
   </footer>
   </body>
 </html>

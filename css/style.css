@@ -11,34 +11,62 @@ body {
   background-color: #ffffff;
 }
 
-header {
-  background-color: #eeeeee;
-}
-
-footer {
-  background-color: white;
-}
-
 a {
   text-decoration: none;
   color: #000000;
 }
 
-
-/* Скрываю форму */
 .visually-hidden {
 display: none;
 }
 
 /* Главная. Шапка */
-.main-navigation {
-  text-transform: uppercase;
-  line-height: 1.88;
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
-.site-navigation,
-.filters ul {
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  line-height: 1.88;
+  background-color: #eeeeee;
+  padding: 0;
+  padding-top: 50px;
+}
+
+.main-header-logo {
+  width: 160px;
+  height: 65px;
+  margin: auto 0;
+  margin-left: 140px;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+  padding: 0 10px;
+  margin: auto 0;
+}
+
+.cart-img {
+  margin-right: 26px;
+}
+
+.site-navigation li,
+.filters ul,
+.footer-social {
   list-style: none;
+}
+
+.cart {
+  display: flex;
+  margin: auto 0;
+  margin-right: 140px;
 }
 
 .main-navigation a:hover {
@@ -62,16 +90,39 @@ display: none;
   opacity: 0.3;
 }
 
+.slider {
+  display: flex;
+  justify-content: space-between;
+  height: 430px;
+  background-color: #eeeeee;
+}
+
+.center {
+  margin: auto;
+}
+
+.catalog {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 200px  80px 140px;
+}
+.catalog-sites,
+.catalog-apps,
+.catalog-pres {
+  width: 300px;
+}
+
+
 .catalog-h1 {
-  margin: 0px;
-  height: 48px;
+  height: 110px;
   font-size: 55px;
   font-weight: 500;
   line-height: 1;
   letter-spacing: normal;
-  text-align: center;
   color: #000000;
   background-color: #eeeeee;
+  padding: 0;
+  padding-top: 50px;
 }
 
 /* Главная. Каталог */
@@ -93,7 +144,6 @@ display: none;
   font-weight: 500;
   text-transform: uppercase;
 }
-
 /*Задаю бэкгрануд и состояния кнопкам «Заказать» на главной*/
 .catalog-sites-offer {
   background-color: #fb565a;
@@ -137,37 +187,13 @@ display: none;
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
-/* Задаю бэкгрануд и состояние кнопкам Соцсетям */
-footer .social-button {
-  background-color: #e1e1e1;
-}
-
-footer .social-button:hover {
-  background-color: #e74246;
-}
-
-footer .social-button:active {
-  background-color: #d7373b;
-  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-}
-
-
-.footer-friendship {
-  font-size: 36px;
-  line-height: 1;
-  font-weight: bold;
-}
-
-.footer-discont {
-  line-height: 1.38;
-  color: #444444;
-}
-
 /* Фильтры в каталоге */
+
 .filters legend {
   font-size: 18px;
   font-weight: bold;
   line-height: 1.67;
+  text-transform: uppercase;
 }
 
 .filters input {
@@ -181,6 +207,20 @@ footer .social-button:active {
   color: #283136;
 }
 
+.price {
+  height: 300px;
+  background-color: palevioletred;
+}
+
+.filter-selection {
+  padding: 0px;
+  margin: 0px;
+}
+
+.filter-selection li {
+  margin: 15px;
+}
+
 .filters input:hover {
   opacity: 1;
 }
@@ -189,6 +229,8 @@ footer .social-button:active {
   background-color: #eeeeee;
   font-weight: 500;
   line-height: 1.13;
+  width: 260px;
+  height: 50px;
 }
 
 .filters button:hover {
@@ -200,7 +242,24 @@ footer .social-button:active {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   color: rgba(0, 0, 0, 0.3);
 }
+/* Стили примеров работ */
+.sort {
+  width: 760px;
+  height: 133px;
+  background-color: palevioletred;
+}
 
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 760px;
+}
+
+.card {
+  width: 360px;
+  padding-bottom: 33px;
+}
 
 /* Стили формы заказа */
 .form-offer h2 {
@@ -236,6 +295,7 @@ footer .social-button:active {
 
 .close-cross {
   opacity: 0.3;
+  border: 1px solid black;
 }
 
 .close-cross:hover {
@@ -244,6 +304,74 @@ footer .social-button:active {
 
 .close-cross:active {
   opacity: 0.1;
+}
+
+/* Стили футура */
+.main-footer {
+  background-color: white;
+  height: 217px;
+}
+
+.footer-social li {
+  width: 69px;
+  height: 69px;
+  background-color: #e1e1e1;
+}
+
+footer .social-button li:hover {
+  background-color: #e74246;
+}
+
+footer .social-button:active {
+  background-color: #d7373b;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+  width: 270px;
+  padding: 0px;
+  margin: auto;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 356px;
+}
+
+.footer-friendship {
+  width: 600px;
+  font-size: 36px;
+  height: 35px;
+  line-height: 1;
+  font-weight: bold;
+  margin-top: 78px;
+  margin-bottom: 0px;
+}
+
+.footer-discont {
+  margin-top: 12px;
+}
+
+.footer-discont {
+  line-height: 1.38;
+  color: #444444;
+  margin: 0;
+  margin-bottom: 76px;
+}
+
+.main-footer .container {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.main .container {
+  display: flex;
+  justify-content: space-around;
 }
 
 
