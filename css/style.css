@@ -22,8 +22,12 @@ a {
 
 /* Главная. Шапка */
 
+.main-header {
+  background-color: #eeeeee;
+}
+
 .container {
-  width: 1440px;
+  width: 1160px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -33,7 +37,6 @@ a {
   justify-content: space-between;
   text-transform: uppercase;
   line-height: 1.88;
-  background-color: #eeeeee;
   padding: 0px;
   padding-top: 50px;
 }
@@ -42,7 +45,6 @@ a {
   width: 160px;
   height: 65px;
   margin: auto 0;
-  margin-left: 140px;
 }
 
 .site-navigation {
@@ -67,7 +69,6 @@ a {
 .cart {
   display: flex;
   margin: auto 0;
-  margin-right: 140px;
 }
 
 .main-navigation a:hover {
@@ -92,35 +93,32 @@ a {
 }
 
 .slider {
-  display: flex;
-  justify-content: space-between;
   height: 430px;
   background-color: #eeeeee;
+  text-align: center;
 }
 
 .center {
-  margin: auto;
+  padding-top: 150px;
+  margin: 0px;
 }
 
 .catalog {
   display: flex;
   justify-content: space-between;
-  padding: 80px 200px  80px 140px;
+  padding: 80px 0px  80px 0px;
 }
 .catalog-sites,
 .catalog-apps,
 .catalog-pres {
   width: 300px;
+  margin: 0 40px;
 }
 
 .main-catalog {
   display: flex;
   justify-content: space-between;
   padding-top: 40px;
-}
-
-.filters {
-  margin-left: 140px;
 }
 
 .catalog-h1 {
@@ -134,6 +132,7 @@ a {
   padding: 0;
   padding-top: 50px;
   text-align: center;
+  margin: 0px;
 }
 
 /* Главная. Каталог */
@@ -258,6 +257,7 @@ a {
   width: 760px;
   height: 133px;
   background-color: palevioletred;
+  margin-bottom: 10px;
 }
 
 .examples {
@@ -327,6 +327,7 @@ a {
   display: block;
   text-align: center;
   padding-top: 25px;
+
 }
 
 
