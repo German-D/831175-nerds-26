@@ -37,69 +37,101 @@
       <form method="get"
             action="#">
         <div class="price">
-        <fieldset >
+        <fieldset class="fieldset">
           <legend>Стоимость:</legend>
         </fieldset>
         </div>
-        <fieldset>
+        <fieldset class="fieldset">
           <legend>Сетка:</legend>
           <ul class="filter-selection">
             <li>
-              <input type="radio" name="site_type" id="adaptive" checked>
-              <label for="adaptive">
-                Адаптивная
+              <input class="input input-display-none" type="radio" name="site_type" id="adaptive" checked>
+                  <label class="label" for="adaptive">
+                        <div class="label-img">
+                          <img class="img-off" src="img/radio-off.svg" alt="radio-off" width="25" height="25">
+                          <img class="img-on" src="img/radio-on.svg" alt="radio-off" width="25" height="25">
+                        </div>
+                <div class="label-text">Адаптивная</div>
               </label>
             </li>
             <li>
-              <input type="radio" name="site_type" id="fixed">
-              <label for="fixed">
-              Фиксированная
+              <input class="input input-display-none" type="radio" name="site_type" id="fixed">
+              <label class="label" for="fixed">
+                <div class="label-img">
+                  <img class="img-off" src="img/radio-off.svg" alt="radio-off" width="25" height="25">
+                  <img class="img-on" src="img/radio-on.svg" alt="radio-off" width="25" height="25">
+                </div>
+                <div class="label-text">Фиксированная</div>
               </label>
             </li>
             <li>
-              <input type="radio" name="site_type" id="rubber">
-              <label for="rubber">
-                Резиновая
+              <input class="input input-display-none" type="radio" name="site_type" id="rubber">
+              <label class="label" for="rubber">
+                <div class="label-img">
+                  <img class="img-off" src="img/radio-off.svg" alt="radio-off" width="25" height="25">
+                  <img class="img-on" src="img/radio-on.svg" alt="radio-off" width="25" height="25">
+                </div>
+                <div class="label-text">Резиновая</div>
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="fieldset fieldset-features">
           <legend>Особенности:</legend>
           <ul class="filter-selection">
             <li>
-              <input type="checkbox" name="slider" id="slider" checked>
-              <label for="slider">
-                Слайдер
+              <input class="input input-display-none" type="checkbox" name="slider" id="slider" checked>
+              <label class="label" for="slider">
+                <div class="label-img">
+                  <img class="img-off" src="img/checkbox-off.svg" alt="radio-off" width="23" height="23">
+                  <img class="img-on" class="visually-hidden" src="img/checkbox-on.svg" alt="radio-off" width="23" height="23">
+                </div>
+                <div class="label-text">Слайдер</div>
               </label>
             </li>
             <li>
-              <input type="checkbox" name="advantage" id="advantage">
-              <label for="advantage">
-                Блок преимуществ
+              <input class="input input-display-none" type="checkbox" name="advantage" id="advantage">
+              <label class="label" for="advantage">
+                <div class="label-img">
+                  <img class="img-off" src="img/checkbox-off.svg" alt="radio-off" width="23" height="23">
+                  <img class="img-on" class="visually-hidden" src="img/checkbox-on.svg" alt="radio-off" width="23" height="23">
+                </div>
+                <div class="label-text">Блок преимуществ</div>
               </label>
             </li>
             <li>
-              <input type="checkbox" name="news" id="news" checked>
-              <label for="news">
-                Новости
+              <input class="input input-display-none" type="checkbox" name="news" id="news" checked>
+              <label class="label" for="news">
+                <div class="label-img">
+                  <img class="img-off" src="img/checkbox-off.svg" alt="radio-off" width="23" height="23">
+                  <img class="img-on" class="visually-hidden" src="img/checkbox-on.svg" alt="radio-off" width="23" height="23">
+                </div>
+                <div class="label-text">Новости</div>
               </label>
             </li>
             <li>
-              <input type="checkbox" name="gallery" id="gallery">
-              <label for="gallery">
-                Галерея
+              <input class="input input-display-none" type="checkbox" name="gallery" id="gallery">
+              <label class="label" for="gallery">
+                <div class="label-img">
+                  <img class="img-off" src="img/checkbox-off.svg" alt="radio-off" width="23" height="23">
+                  <img class="img-on" class="visually-hidden" src="img/checkbox-on.svg" alt="radio-off" width="23" height="23">
+                </div>
+                <div class="label-text">Галерея</div>
               </label>
             </li>
             <li>
-              <input type="checkbox" name="cart" id="cart">
-              <label for="cart">
-                Корзина
+              <input class="input input-display-none" type="checkbox" name="cart" id="cart">
+              <label class="label" for="cart">
+                <div class="label-img">
+                  <img class="img-off" src="img/checkbox-off.svg" alt="radio-off" width="23" height="23">
+                  <img class="img-on" class="visually-hidden" src="img/checkbox-on.svg" alt="radio-off" width="23" height="23">
+                </div>
+                <div class="label-text">Корзина</div>
               </label>
             </li>
           </ul>
         </fieldset>
-        <button type="submit">Показать</button>
+        <button class="button-filters" type="submit">Показать</button>
       </form>
     </section>
   <section>
@@ -108,58 +140,81 @@
     </div>
     <div class="examples">
     <div class="card">
-      <div><img src="img/browser.svg" alt="panel" width="360" height="40"></div>
-      <div><img src="img/img-sedona-jpg@2x.jpg" alt="Sedona" width="360" height="576"></div>
+      <div>
+        <img src="img/browser.svg" alt="panel" width="360" height="40">
+      </div>
+      <div>
+        <img src="img/img-sedona-jpg@2x.jpg" alt="Sedona" width="360" height="576">
+      </div>
     </div>
     <div class="card">
-      <div><img src="img/browser.svg" alt="panel" width="360" height="40"></div>
-      <div><img src="img/img-pink-jpg@2x.jpg" alt="Pink" width="360" height="576"></div>
+      <div>
+        <img src="img/browser.svg" alt="panel" width="360" height="40">
+      </div>
+      <div>
+        <img src="img/img-pink-jpg@2x.jpg" alt="Pink" width="360" height="576">
+      </div>
     </div>
     <div class="card">
-      <div><img src="img/browser.svg" alt="panel" width="360" height="40"></div>
-      <div><img src="img/img-barbershop-jpg@2x.jpg" alt="Borodinski" width="360" height="576"></div>
+      <div>
+        <img src="img/browser.svg" alt="panel" width="360" height="40">
+      </div>
+      <div>
+        <img src="img/img-barbershop-jpg@2x.jpg" alt="Borodinski" width="360" height="576">
+      </div>
     </div>
     <div class="card">
-      <div><img src="img/browser.svg" alt="panel" width="360" height="40"></div>
+      <div>
+        <img src="img/browser.svg" alt="panel" width="360" height="40">
+      </div>
      <div><img src="img/img-mishka-jpg@2x.jpg" alt="Mishka" width="360" height="576"></div>
     </div>
     <div class="card">
-      <div><img src="img/browser.svg" alt="panel" width="360" height="40"></div>
-      <div><img src="img/img-aplus-jpg@2x.jpg" alt="Repetitor" width="360" height="576"></div>
+      <div>
+        <img src="img/browser.svg" alt="panel" width="360" height="40">
+      </div>
+      <div>
+        <img src="img/img-aplus-jpg@2x.jpg" alt="Repetitor" width="360" height="576">
+      </div>
     </div>
     <div class="card">
-      <div><img src="img/browser.svg" alt="panel" width="360" height="40"></div>
-     <div><img src="img/img-kvast-jpg@2x.jpg" alt="Кваст" width="360" height="576"></div>
+      <div>
+        <img src="img/browser.svg" alt="panel" width="360" height="40">
+      </div>
+     <div>
+       <img src="img/img-kvast-jpg@2x.jpg" alt="Кваст" width="360" height="576">
+     </div>
     </div>
     </div>
   </section>
-  <!-- Форма отправки -->
-  <section class="visually-hidden form-offer">
-    <h2>Напишите нам</h2>
-    <a href="#"><img src="img/close-cross.svg" alt="Закрыть форму" width="21" height="21"></a>
-    <form method="post" action="#">
-      <div>
-      <div>
+</main>
+<!-- Форма отправки -->
+<section class="form-offer">
+  <div class="form-container">
+  <div class="form-header"><h2>Напишите нам</h2>
+    <a href="#"><img class="cross" src="img/close-cross.svg" alt="Закрыть форму" width="21" height="21"></a>
+  </div>
+  <form method="post" action="#">
+    <div class="name-email">
+      <div class="user-name">
         <label for="user-name">Ваше имя:</label>
         <input id="user-name" type="text"
                name="name" placeholder="Имя Фамилия">
       </div>
-      <div>
-        <label for="user-email">Ваш e-mail</label>
+      <div class="user-email">
+        <label for="user-email">Ваш e-mail:</label>
         <input id="user-email" type="email"
                name="email" placeholder="email@example.com">
       </div>
-      </div>
-      <div>
-        <label for="user-text">Текст письма</label>
-        <textarea name="text" id="user-text" placeholder="в свободной форме" cols="30" rows="10">
-      </textarea>
-      </div>
-      <button type="submit">Отправить</button>
-    </form>
-  </section>
-  </div>
-</main>
+    </div>
+    <div class="form-text">
+      <label for="user-text">Текст письма:</label>
+      <textarea name="text" id="user-text" cols="70" rows="40" placeholder="В свободной форме"></textarea>
+    </div>
+    <button type="submit">Отправить</button>
+  </form>
+ </div>
+</section>
 <footer class="main-footer">
   <div class="container">
     <ul class="footer-social">

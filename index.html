@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="yandex-verification" content="5b387f6c836e6d08" />
     <title>Дизайн студия: «Нёрдс»</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
@@ -44,7 +45,7 @@
         <p>Мир никогда не будет прежним<br>
         после того как увидит ваш сайт!
         </p>
-        <a class="catalog-sites-offer" href="#">Заказать</a>
+        <a class="catalog-sites-offer offer-bottom" href="#">Заказать</a>
       </div>
       <div class="catalog-apps">
         <a href="#">
@@ -54,7 +55,7 @@
         <p>Покорите топ-10 приложений<br>
           AppStore и Google Play
         </p>
-        <a class="catalog-apps-offer" href="#">Заказать</a>
+        <a class="catalog-apps-offer offer-bottom" href="#">Заказать</a>
       </div>
       <div class="catalog-pres">
         <a href="#">
@@ -64,36 +65,38 @@
         <p>Вы даже не представляете,<br>
           насколько вы изумительны!
         </p>
-        <a class="catalog-pres-offer" href="#">Заказать</a>
+        <a class="catalog-pres-offer offer-bottom" href="#">Заказать</a>
       </div>
-    </section>
-    <!-- Форма-->
-    <section class="visually-hidden form-offer">
-      <h2>Напишите нам</h2>
-      <a class="close-cross" href="#"><img src="img/close-cross.svg" alt="Закрыть форму" width="21" height="21"></a>
-    <form method="post" action="#">
-      <div>
-      <div>
-        <label for="user-name">Ваше имя:</label>
-        <input id="user-name" type="text"
-               name="name" placeholder="Имя Фамилия">
-      </div>
-      <div>
-        <label for="user-email">Ваш e-mail</label>
-        <input id="user-email" type="email"
-               name="email" placeholder="email@example.com">
-      </div>
-      </div>
-      <div>
-      <label for="user-text">Текст письма</label>
-      <textarea name="text" id="user-text" placeholder="в свободной форме" cols="30" rows="10">
-      </textarea>
-      </div>
-      <button type="submit">Отправить</button>
-    </form>
     </section>
   </main>
-  <footer class="main-footer">
+  <!-- Форма отправки -->
+  <section class="form-offer">
+    <div class="form-container">
+      <div class="form-header"><h2>Напишите нам</h2>
+        <a href="#"><img class="cross" src="img/close-cross.svg" alt="Закрыть форму" width="21" height="21"></a>
+      </div>
+      <form method="post" action="#">
+        <div class="name-email">
+          <div class="user-name">
+            <label for="user-name">Ваше имя:</label>
+            <input id="user-name" type="text"
+                   name="name" placeholder="Имя Фамилия">
+          </div>
+          <div class="user-email">
+            <label for="user-email">Ваш e-mail:</label>
+            <input id="user-email" type="email"
+                   name="email" placeholder="email@example.com">
+          </div>
+        </div>
+        <div class="form-text">
+          <label for="user-text">Текст письма:</label>
+          <textarea name="text" id="user-text" cols="70" rows="40" placeholder="В свободной форме"></textarea>
+        </div>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+  </section>
+    <footer class="main-footer">
     <div class="container">
     <ul class="footer-social">
       <li><a class="social-button" href="#"><img src="img/vk-icon.svg" alt="vk" width="26" height="15"></a></li>
