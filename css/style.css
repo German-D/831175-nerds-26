@@ -113,7 +113,6 @@ a {
 .catalog-apps,
 .catalog-pres {
   width: 300px;
-  margin: 0 40px;
 }
 
 .main-catalog {
@@ -189,7 +188,7 @@ a {
 
 .catalog-apps-offer:active {
   background-color: #00aa62;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
@@ -203,7 +202,7 @@ a {
 
 .catalog-pres-offer:active {
   background-color: #e5a722;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
@@ -315,9 +314,10 @@ a {
 .mini-header {
   opacity: 0.12;
   height: 40px;
+  border: none;
 }
 
-.mini-header:hover {
+.card:hover .mini-header{
   opacity: 1;
 }
 
@@ -496,6 +496,7 @@ a {
   border: solid 2px #b4b9bb;
 }
 
+.form-offer input:focus {
 .form-offer input:focus {
   border: solid 2px #000000;
 }
