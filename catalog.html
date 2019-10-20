@@ -28,10 +28,10 @@
         </div>
       </div>
   </nav>
-</header>
-<main>
   <h1 class="catalog-h1">Магазин готовых шаблонов</h1>
-  <div class="main-catalog container">
+</header>
+<main class="container">
+  <div class="main-catalog">
     <section class="filters">
       <h2 class="visually-hidden">Каталог</h2>
       <form method="get"
@@ -40,6 +40,24 @@
         <fieldset class="fieldset">
           <legend>Стоимость:</legend>
         </fieldset>
+          <div class="begunok">
+          </div>
+          <div class="price-strip">
+          </div>
+          <div class="price-strip-fill">
+          </div>
+          <img class="left-price" src="img/filter-button.svg" alt="price-slide">
+          <img class="right-price" src="img/filter-button.svg" alt="price-slide">
+          <div class="min-max-price">
+          <div class="min-price">
+            <label for="min-price">ОТ</label>
+            <input id="min-price" type="number" name="name" placeholder="0">
+          </div>
+          <div class="max-price">
+            <label for="max-price">ДО</label>
+            <input id="max-price" type="number" name="name" placeholder="15000">
+          </div>
+          </div>
         </div>
         <fieldset class="fieldset">
           <legend>Сетка:</legend>
@@ -136,7 +154,17 @@
     </section>
   <section>
     <h2 class="visually-hidden">Примеры работ</h2>
-    <div class="sort">
+    <div class="examples-header">
+      <span>сортировать:</span>
+      <ul>
+        <li>по цене</li>
+        <li>по типу</li>
+        <li>по названию</li>
+      </ul>
+      <div class="examples-header-icons">
+        <img class="icon-down" src="img/icon-down-dir.svg" alt="icon-down">
+        <img class="icon-up" src="img/icon-up-dir.svg" alt="icon-up">
+      </div>
     </div>
     <div class="examples">
     <div class="card">
@@ -216,10 +244,41 @@
       </div>
     </div>
     </div>
+    <section>
+    <div class="pagination">
+      <div class="page1 active-page1">
+        1
+      </div>
+      <div class="page2">
+        2
+      </div>
+      <div class="page3">
+        3
+      </div>
+      <div class="next-page">
+        СЛЕДУЮЩАЯ
+      </div>
+    </div>
+  </div>
   </section>
+    <section class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533168!2d30.320858716783576!3d59.93871648187632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1571429427677!5m2!1sru!2sru" width="1440" height="416" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <div class="address">
+        <div class="address-container">
+          <h2>NЁRDS DESIGN STUDIO</h2>
+          <p>191186, Санкт-Петербург, <br>
+            ул. Б. Конюшенная, д. 19/8 <br>
+            <br>
+            тел. +7 (812) 275-75-75
+          </p>
+          <a href="#">Напишите нам</a>
+        </div>
+      </div>
+      <img class="map-marker" src="img/map-marker-png.png" alt="map-marker" width="231" height="190">
+    </section>
 </main>
 <!-- Форма отправки -->
-<section class="form-offer">
+<section class="form-offer visually-hidden">
   <div class="form-container">
   <div class="form-header"><h2>Напишите нам</h2>
     <a href="#"><img class="cross" src="img/close-cross.svg" alt="Закрыть форму" width="21" height="21"></a>
