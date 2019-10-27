@@ -30,9 +30,9 @@
   </nav>
   <h1 class="catalog-h1">Магазин готовых шаблонов</h1>
 </header>
-<main class="container">
-  <div class="main-catalog">
-    <section class="filters">
+<main>
+  <div class="main-catalog container">
+    <div class="filters">
       <h2 class="visually-hidden">Каталог</h2>
       <form method="get"
             action="#">
@@ -40,7 +40,7 @@
         <fieldset class="fieldset">
           <legend>Стоимость:</legend>
         </fieldset>
-          <div class="begunok">
+          <div class="price-point">
           </div>
           <div class="price-strip">
           </div>
@@ -50,11 +50,11 @@
           <img class="right-price" src="img/filter-button.svg" alt="price-slide">
           <div class="min-max-price">
           <div class="min-price">
-            <label for="min-price">ОТ</label>
+            <label for="min-price">от</label>
             <input id="min-price" type="number" name="name" placeholder="0">
           </div>
           <div class="max-price">
-            <label for="max-price">ДО</label>
+            <label for="max-price">до</label>
             <input id="max-price" type="number" name="name" placeholder="15000">
           </div>
           </div>
@@ -63,33 +63,28 @@
           <legend>Сетка:</legend>
           <ul class="filter-selection">
             <li>
-              <input class="input input-display-none" type="radio" name="site_type" id="adaptive" checked>
-                  <label class="label" for="adaptive">
-                        <div class="label-img">
+              <input class="input visually-hidden" type="radio" name="site_type" id="adaptive" checked>
+              <label class="label label-img" for="adaptive">
                           <img class="img-off" src="img/radio-off.svg" alt="radio-off" width="25" height="25">
                           <img class="img-on" src="img/radio-on.svg" alt="radio-off" width="25" height="25">
-                        </div>
-                <div class="label-text">Адаптивная</div>
+                <span class="label-text">Адаптивная
+                </span>
               </label>
             </li>
             <li>
-              <input class="input input-display-none" type="radio" name="site_type" id="fixed">
-              <label class="label" for="fixed">
-                <div class="label-img">
+              <input class="input visually-hidden" type="radio" name="site_type" id="fixed">
+              <label class="label label-img" for="fixed">
                   <img class="img-off" src="img/radio-off.svg" alt="radio-off" width="25" height="25">
                   <img class="img-on" src="img/radio-on.svg" alt="radio-off" width="25" height="25">
-                </div>
-                <div class="label-text">Фиксированная</div>
+                <span class="label-text">Фиксированная</span>
               </label>
             </li>
             <li>
-              <input class="input input-display-none" type="radio" name="site_type" id="rubber">
-              <label class="label" for="rubber">
-                <div class="label-img">
+              <input class="input visually-hidden" type="radio" name="site_type" id="rubber">
+              <label class="label label-img" for="rubber">
                   <img class="img-off" src="img/radio-off.svg" alt="radio-off" width="25" height="25">
                   <img class="img-on" src="img/radio-on.svg" alt="radio-off" width="25" height="25">
-                </div>
-                <div class="label-text">Резиновая</div>
+                <span class="label-text">Резиновая</span>
               </label>
             </li>
           </ul>
@@ -98,61 +93,52 @@
           <legend>Особенности:</legend>
           <ul class="filter-selection">
             <li>
-              <input class="input input-display-none" type="checkbox" name="slider" id="slider" checked>
-              <label class="label" for="slider">
-                <div class="label-img">
+              <input class="input visually-hidden" type="checkbox" name="slider" id="slider" checked>
+              <label class="label label-img" for="slider">
                   <img class="img-off" src="img/checkbox-off.svg" alt="radio-off" width="23" height="23">
-                  <img class="img-on" class="visually-hidden" src="img/checkbox-on.svg" alt="radio-off" width="23" height="23">
-                </div>
-                <div class="label-text">Слайдер</div>
+                  <img class="img-on visually-hidden" src="img/checkbox-on.svg" alt="radio-off" width="23" height="23">
+                <span class="label-text">Слайдер</span>
               </label>
             </li>
             <li>
-              <input class="input input-display-none" type="checkbox" name="advantage" id="advantage">
-              <label class="label" for="advantage">
-                <div class="label-img">
+              <input class="input visually-hidden" type="checkbox" name="advantage" id="advantage">
+              <label class="label label-img" for="advantage">
                   <img class="img-off" src="img/checkbox-off.svg" alt="radio-off" width="23" height="23">
-                  <img class="img-on" class="visually-hidden" src="img/checkbox-on.svg" alt="radio-off" width="23" height="23">
-                </div>
-                <div class="label-text">Блок преимуществ</div>
+                  <img class="img-on visually-hidden" src="img/checkbox-on.svg" alt="radio-off" width="23" height="23">
+                <span class="label-text">Блок преимуществ</span>
               </label>
             </li>
             <li>
-              <input class="input input-display-none" type="checkbox" name="news" id="news" checked>
-              <label class="label" for="news">
-                <div class="label-img">
+              <input class="input visually-hidden" type="checkbox" name="news" id="news" checked>
+              <label class="label label-img" for="news">
                   <img class="img-off" src="img/checkbox-off.svg" alt="radio-off" width="23" height="23">
-                  <img class="img-on" class="visually-hidden" src="img/checkbox-on.svg" alt="radio-off" width="23" height="23">
-                </div>
-                <div class="label-text">Новости</div>
+                  <img class="img-on visually-hidden" src="img/checkbox-on.svg" alt="radio-off" width="23" height="23">
+                <span class="label-text">Новости</span>
               </label>
             </li>
             <li>
-              <input class="input input-display-none" type="checkbox" name="gallery" id="gallery">
-              <label class="label" for="gallery">
-                <div class="label-img">
+              <input class="input visually-hidden" type="checkbox" name="gallery" id="gallery">
+              <label class="label label-img" for="gallery">
                   <img class="img-off" src="img/checkbox-off.svg" alt="radio-off" width="23" height="23">
-                  <img class="img-on" class="visually-hidden" src="img/checkbox-on.svg" alt="radio-off" width="23" height="23">
-                </div>
-                <div class="label-text">Галерея</div>
+                  <img class="img-on visually-hidden" src="img/checkbox-on.svg" alt="radio-off" width="23" height="23">
+                <span class="label-text">Галерея</span>
               </label>
             </li>
             <li>
-              <input class="input input-display-none" type="checkbox" name="cart" id="cart">
-              <label class="label" for="cart">
-                <div class="label-img">
+              <input class="input visually-hidden" type="checkbox" name="cart" id="cart">
+              <label class="label label-img" for="cart">
                   <img class="img-off" src="img/checkbox-off.svg" alt="radio-off" width="23" height="23">
-                  <img class="img-on" class="visually-hidden" src="img/checkbox-on.svg" alt="radio-off" width="23" height="23">
-                </div>
-                <div class="label-text">Корзина</div>
+                  <img class="img-on visually-hidden" src="img/checkbox-on.svg" alt="radio-off" width="23" height="23">
+                <span class="label-text">Корзина</span>
               </label>
             </li>
           </ul>
         </fieldset>
         <button class="button-filters" type="submit">Показать</button>
       </form>
-    </section>
-  <section>
+    </div>
+<!--    Список сайтов-->
+   <section>
     <h2 class="visually-hidden">Примеры работ</h2>
     <div class="examples-header">
       <span>сортировать:</span>
@@ -166,116 +152,118 @@
         <img class="icon-up" src="img/icon-up-dir.svg" alt="icon-up">
       </div>
     </div>
-    <div class="examples">
-    <div class="card">
+    <ul class="examples">
+    <li class="card">
       <div class="mini-header">
         <img src="img/browser.svg" alt="panel" width="360" height="40">
       </div>
       <div>
         <img src="img/img-sedona-jpg@2x.jpg" alt="Sedona" width="360" height="576">
       </div>
-      <div class="examples-popup">
+      <div class="visually-hidden examples-popup">
         <a class="examples-h3" href="#">sedona</a>
-        <p>Информационный сайт <br> для туристов</p>
+          <p class="card-container">Информационный сайт для&nbspтуристов </p>
         <a class="examples-offer-bottom" href="#">9 900 РУБ.</a>
       </div>
-    </div>
-    <div class="card">
+    </li>
+    <li class="card">
       <div class="mini-header">
         <img src="img/browser.svg" alt="panel" width="360" height="40">
       </div>
       <div>
         <img src="img/img-pink-jpg@2x.jpg" alt="Pink" width="360" height="576">
       </div>
-      <div class="examples-popup">
+      <div class="visually-hidden examples-popup">
         <a class="examples-h3" href="#">pink app</a>
-        <p>Продуктовый лендинг<br>приложения для IOS и Android</p>
+        <p>Продуктовый лендинг приложения для IOS и Android</p>
         <a class="examples-offer-bottom" href="#">9 900 РУБ.</a>
       </div>
-    </div>
-    <div class="card">
+    </li>
+    <li class="card">
       <div class="mini-header">
         <img src="img/browser.svg" alt="panel" width="360" height="40">
       </div>
       <div>
         <img src="img/img-barbershop-jpg@2x.jpg" alt="Borodinski" width="360" height="576">
       </div>
-      <div class="examples-popup">
+      <div class="visually-hidden examples-popup">
         <a class="examples-h3" href="#">barbershop</a>
-        <p>Сайт салоона красоты.<br>Для мужчин, да.</p>
+        <p>Сайт салоона красоты. Для&nbspмужчин, да.</p>
         <a class="examples-offer-bottom" href="#">9 900 РУБ.</a>
       </div>
-    </div>
-    <div class="card">
+    </li>
+    <li class="card">
       <div class="mini-header">
         <img src="img/browser.svg" alt="panel" width="360" height="40">
       </div>
      <div><img src="img/img-mishka-jpg@2x.jpg" alt="Mishka" width="360" height="576"></div>
-      <div class="examples-popup">
+      <div class="visually-hidden examples-popup">
         <a class="examples-h3" href="#">mishka</a>
-        <p>Интернет-магазин <br>вязаных игрушек</p>
+        <p>Интернет-магазин вязаных&nbspигрушек</p>
         <a class="examples-offer-bottom" href="#">9 900 РУБ.</a>
       </div>
-    </div>
-    <div class="card">
+    </li>
+    <li class="card">
       <div class="mini-header">
         <img src="img/browser.svg" alt="panel" width="360" height="40">
       </div>
       <div>
         <img src="img/img-aplus-jpg@2x.jpg" alt="Repetitor" width="360" height="576">
       </div>
-      <div class="examples-popup">
+      <div class="visually-hidden examples-popup">
         <a class="examples-h3" href="#">sedona</a>
-        <p>Лендинг курсов повышения<br>квалификации</p>
+        <p>Лендинг курсов повышения квалификации</p>
         <a class="examples-offer-bottom" href="#">9 900 РУБ.</a>
       </div>
-    </div>
-    <div class="card">
+    </li>
+    <li class="card">
       <div class="mini-header">
         <img src="img/browser.svg" alt="panel" width="360" height="40">
       </div>
      <div>
        <img src="img/img-kvast-jpg@2x.jpg" alt="Кваст" width="360" height="576">
      </div>
-      <div class="examples-popup">
+      <div class="visually-hidden examples-popup">
         <a class="examples-h3" href="#">КВАСТ</a>
-        <p>Промо-сайт производителя<br>крафтового кваса</p>
+        <p>Промо-сайт производителя крафтового кваса</p>
         <a class="examples-offer-bottom" href="#">9 900 РУБ.</a>
       </div>
-    </div>
-    </div>
+    </li>
+    </ul>
+<!--    Пагинация-->
     <section>
-    <div class="pagination">
-      <div class="page1 active-page1">
+    <ul class="pagination">
+      <li class="page1 active-page1">
         1
-      </div>
-      <div class="page2">
-        2
-      </div>
-      <div class="page3">
-        3
-      </div>
-      <div class="next-page">
-        СЛЕДУЮЩАЯ
+      </li>
+      <li class="page">
+        <a href="#">2</a>
+      </li>
+      <li class="page">
+        <a href="">3</a>
+      </li>
+      <li class="next-page">
+        <a href="">следующая</a>
+      </li>
+    </ul>
+    </section>
+  </div>
+<!--  Карта-->
+    <section class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533168!2d30.320858716783576!3d59.93871648187632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1571429427677!5m2!1sru!2sru" width="100%" height="416" style="border:0;" allowfullscreen=""></iframe>
+    </section>
+  <div class="inventory container">
+    <div class="address">
+      <div class="address-container">
+        <h2>nёrds design studio</h2>
+        <p>191186, Санкт-Петербург, <br>
+          ул. Б. Конюшенная, д. 19/8
+          <span>тел. +7 (812) 275-75-75</span>
+        </p>
+        <a href="#">Напишите нам</a>
       </div>
     </div>
-  </div>
-  </section>
-    <section class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533168!2d30.320858716783576!3d59.93871648187632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1571429427677!5m2!1sru!2sru" width="1440" height="416" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-      <div class="address">
-        <div class="address-container">
-          <h2>NЁRDS DESIGN STUDIO</h2>
-          <p>191186, Санкт-Петербург, <br>
-            ул. Б. Конюшенная, д. 19/8 <br>
-            <br>
-            тел. +7 (812) 275-75-75
-          </p>
-          <a href="#">Напишите нам</a>
-        </div>
-      </div>
-      <img class="map-marker" src="img/map-marker-png.png" alt="map-marker" width="231" height="190">
-    </section>
+    <img class="map-marker" src="img/map-marker-png.png" alt="map-marker" width="231" height="190">
 </main>
 <!-- Форма отправки -->
 <section class="form-offer visually-hidden">
