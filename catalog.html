@@ -8,7 +8,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header class="main-header">
+<header class="main-header-catalog">
   <nav class="main-navigation container">
       <a class="main-header-logo" href="index.html">
         <img src="img/nerds-logo.svg" alt="Логотип Нёрдс" width="160" height="65">
@@ -31,7 +31,7 @@
   <h1 class="catalog-h1">Магазин готовых шаблонов</h1>
 </header>
 <main>
-  <div class="main-catalog container">
+  <section class="main-catalog container">
     <div class="filters">
       <h2 class="visually-hidden">Каталог</h2>
       <form method="get"
@@ -59,10 +59,10 @@
           </div>
           </div>
         </div>
-        <fieldset class="fieldset">
+        <fieldset class="grid">
           <legend>Сетка:</legend>
           <ul class="filter-selection">
-            <li>
+            <li class="grid-li1">
               <input class="input visually-hidden" type="radio" name="site_type" id="adaptive" checked>
               <label class="label label-img" for="adaptive">
                           <img class="img-off" src="img/radio-off.svg" alt="radio-off" width="25" height="25">
@@ -71,7 +71,7 @@
                 </span>
               </label>
             </li>
-            <li>
+            <li class="grid-li2">
               <input class="input visually-hidden" type="radio" name="site_type" id="fixed">
               <label class="label label-img" for="fixed">
                   <img class="img-off" src="img/radio-off.svg" alt="radio-off" width="25" height="25">
@@ -89,10 +89,10 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="fieldset fieldset-features">
+        <fieldset class="fieldset-features">
           <legend>Особенности:</legend>
           <ul class="filter-selection">
-            <li>
+            <li class="feature-1">
               <input class="input visually-hidden" type="checkbox" name="slider" id="slider" checked>
               <label class="label label-img" for="slider">
                   <img class="img-off" src="img/checkbox-off.svg" alt="radio-off" width="23" height="23">
@@ -100,7 +100,7 @@
                 <span class="label-text">Слайдер</span>
               </label>
             </li>
-            <li>
+            <li class="feature-2">
               <input class="input visually-hidden" type="checkbox" name="advantage" id="advantage">
               <label class="label label-img" for="advantage">
                   <img class="img-off" src="img/checkbox-off.svg" alt="radio-off" width="23" height="23">
@@ -108,7 +108,7 @@
                 <span class="label-text">Блок преимуществ</span>
               </label>
             </li>
-            <li>
+            <li class="feature-3">
               <input class="input visually-hidden" type="checkbox" name="news" id="news" checked>
               <label class="label label-img" for="news">
                   <img class="img-off" src="img/checkbox-off.svg" alt="radio-off" width="23" height="23">
@@ -116,7 +116,7 @@
                 <span class="label-text">Новости</span>
               </label>
             </li>
-            <li>
+            <li class="feature-4">
               <input class="input visually-hidden" type="checkbox" name="gallery" id="gallery">
               <label class="label label-img" for="gallery">
                   <img class="img-off" src="img/checkbox-off.svg" alt="radio-off" width="23" height="23">
@@ -124,7 +124,7 @@
                 <span class="label-text">Галерея</span>
               </label>
             </li>
-            <li>
+            <li class="feature-5">
               <input class="input visually-hidden" type="checkbox" name="cart" id="cart">
               <label class="label label-img" for="cart">
                   <img class="img-off" src="img/checkbox-off.svg" alt="radio-off" width="23" height="23">
@@ -162,7 +162,7 @@
       </div>
       <div class="visually-hidden examples-popup">
         <a class="examples-h3" href="#">sedona</a>
-          <p class="card-container">Информационный сайт для&nbspтуристов </p>
+          <p class="card-container">Информационный сайт для&nbsp;туристов </p>
         <a class="examples-offer-bottom" href="#">9 900 РУБ.</a>
       </div>
     </li>
@@ -179,7 +179,7 @@
         <a class="examples-offer-bottom" href="#">9 900 РУБ.</a>
       </div>
     </li>
-    <li class="card">
+    <li class="card barbershop">
       <div class="mini-header">
         <img src="img/browser.svg" alt="panel" width="360" height="40">
       </div>
@@ -188,22 +188,22 @@
       </div>
       <div class="visually-hidden examples-popup">
         <a class="examples-h3" href="#">barbershop</a>
-        <p>Сайт салоона красоты. Для&nbspмужчин, да.</p>
+        <p>Сайт салона красоты. Для&nbsp;мужчин, да.</p>
         <a class="examples-offer-bottom" href="#">9 900 РУБ.</a>
       </div>
     </li>
-    <li class="card">
+    <li class="card mishka">
       <div class="mini-header">
         <img src="img/browser.svg" alt="panel" width="360" height="40">
       </div>
      <div><img src="img/img-mishka-jpg@2x.jpg" alt="Mishka" width="360" height="576"></div>
       <div class="visually-hidden examples-popup">
         <a class="examples-h3" href="#">mishka</a>
-        <p>Интернет-магазин вязаных&nbspигрушек</p>
+        <p>Интернет-магазин вязаных&nbsp;игрушек</p>
         <a class="examples-offer-bottom" href="#">9 900 РУБ.</a>
       </div>
     </li>
-    <li class="card">
+    <li class="card aika">
       <div class="mini-header">
         <img src="img/browser.svg" alt="panel" width="360" height="40">
       </div>
@@ -211,12 +211,12 @@
         <img src="img/img-aplus-jpg@2x.jpg" alt="Repetitor" width="360" height="576">
       </div>
       <div class="visually-hidden examples-popup">
-        <a class="examples-h3" href="#">sedona</a>
+        <a class="examples-h3" href="#">Айка</a>
         <p>Лендинг курсов повышения квалификации</p>
         <a class="examples-offer-bottom" href="#">9 900 РУБ.</a>
       </div>
     </li>
-    <li class="card">
+    <li class="card kvast">
       <div class="mini-header">
         <img src="img/browser.svg" alt="panel" width="360" height="40">
       </div>
@@ -230,7 +230,7 @@
       </div>
     </li>
     </ul>
-<!--    Пагинация-->
+        <!--    Пагинация-->
     <section>
     <ul class="pagination">
       <li class="page1 active-page1">
@@ -245,12 +245,13 @@
       <li class="next-page">
         <a href="">следующая</a>
       </li>
-    </ul>
+     </ul>
     </section>
-  </div>
-<!--  Карта-->
+   </section>
+  </section>
+            <!--  Карта-->
     <section class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533168!2d30.320858716783576!3d59.93871648187632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1571429427677!5m2!1sru!2sru" width="100%" height="416" style="border:0;" allowfullscreen=""></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533168!2d30.320858716783576!3d59.93871648187632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1571429427677!5m2!1sru!2sru" height="416" style="border:0;" allowfullscreen=""></iframe>
     </section>
   <div class="inventory container">
     <div class="address">
@@ -264,6 +265,7 @@
       </div>
     </div>
     <img class="map-marker" src="img/map-marker-png.png" alt="map-marker" width="231" height="190">
+  </div>
 </main>
 <!-- Форма отправки -->
 <section class="form-offer visually-hidden">
