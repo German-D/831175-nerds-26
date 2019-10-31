@@ -757,11 +757,11 @@ a {
   opacity: 1;
 }
 
-.filter-selection input:disabled img {
+.filter-selection input:disabled ~ label img {
   opacity: 0.1;
 }
 
-.filter-selection input:disabled .label-text {
+.filter-selection input:disabled ~ label span {
   color: rgba(40, 49, 54, 0.3);
 }
 
