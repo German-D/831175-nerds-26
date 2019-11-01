@@ -16,7 +16,7 @@ try {
   isStorageSupport = false;
 }
 
-// Обработчик кнопки «Напишите нам»
+// Обработчик кнопки «Напишите нам». Открываем форму
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("visually-hidden");
