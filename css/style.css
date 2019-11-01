@@ -530,7 +530,7 @@ a {
   padding-top: 47px;
 }
 
-.address-container span {
+.phone-number {
   display: inline-block;
   margin-top: 17px;
 }
@@ -553,7 +553,7 @@ a {
 
 }
 
-.address a {
+.form-link {
   height: 38px;
   background-color: #fb565a;
   display: block;
@@ -566,11 +566,11 @@ a {
   text-transform: uppercase;
 }
 
-.address a:hover {
+.form-link:hover {
   background-color: #e74246;
 }
 
-.address a:active {
+.form-link:active {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
@@ -1010,6 +1010,10 @@ a {
   position: fixed;
   top: 710px;
   left: 240px;
+}
+
+.fone-number {
+
 }
 
 .form-container {
