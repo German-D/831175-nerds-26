@@ -1,7 +1,7 @@
 var link = document.querySelector(".form-link");
 var popup = document.querySelector(".form-offer");
 var closedForm = document.querySelector(".close-link");
-var navernoeName = popup.querySelector("[name=name]");
+var formName = popup.querySelector("[name=name]");
 var email = popup.querySelector("[name=email]");
 var text = popup.querySelector("[name=text]");
 var storageName = localStorage.getItem("name");
@@ -22,11 +22,11 @@ link.addEventListener("click", function (evt) {
   popup.classList.remove("visually-hidden");
   popup.classList.add("form-animation");
   if (storage) {
-    navernoeName.value = storageName;
+    formName.value = storageName;
     email.value = storageEmail;
     text.focus();
   } else {
-    navernoeName.focus();
+    formName.focus();
   }
 });
 
@@ -39,14 +39,14 @@ closedForm.addEventListener("click", function (evt) {
 
 // Проверка, что все поля формы не пустые и запись в локалсторадж
 popup.addEventListener("submit", function (evt) {
-  if (!navernoeName.value || !email.value || !text.value) {
+  if (!formName.value || !email.value || !text.value) {
     evt.preventDefault();
     // alert("Не все поля заполнены!");
     popup.classList.remove("form-animation");
     popup.classList.add("form-error");
   } else {
     if (isStorageSupport) {
-      localStorage.setItem("name", navernoeName.value);
+      localStorage.setItem("name", formName.value);
       localStorage.setItem("email", email.value);
     }
   }
