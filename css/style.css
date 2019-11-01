@@ -1004,14 +1004,16 @@ a {
 
 /* Стили формы заказа */
 .form-offer {
+  background-color: white;
   width: 960px;
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
-  margin: auto;
-  margin-bottom: 50px;
+  position: fixed;
+  top: 710px;
+  left: 240px;
 }
 
 .form-container {
-  padding: 73px 100px 84px 100px;
+  padding: 26px 100px 55px 100px;
 }
 
 .form-header {
@@ -1076,7 +1078,7 @@ a {
   height: 50px;
   color: #ffffff;
   text-transform: uppercase;
-  margin-top: 47px;
+  margin-top: 40px;
   border: none;
 }
 
@@ -1204,4 +1206,29 @@ footer .container {
 
 .visually-hidden {
   display: none;
+}
+
+
+/*Добавляетм анимацию*/
+@keyframes bounce {
+  0% { transform: translateY(-2000px); }
+  70% { transform: translateY(30px); }
+  90% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes shake {
+  0%, 100%                { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+  20%, 40%, 60%, 80%      { transform: translateX(10px); }
+}
+
+.form-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
+}
+
+.form-animation {
+  animation-name: bounce;
+  animation-duration: 0.6s;
 }
