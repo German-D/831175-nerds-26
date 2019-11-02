@@ -1,13 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: normal;
   color: #000000;
-
   background-color: #ffffff;
 }
 
@@ -27,9 +25,7 @@ a {
 
 .main-header-catalog {
   background-color: #eeeeee;
-  height: 355px;
 }
-
 
 .container {
   width: 1160px;
@@ -56,10 +52,13 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 0;
-  width: 438px;
-  margin-top: 29px;
-  margin-right: 43px;
+  padding-right: 43px;
 }
+
+.site-navigation li {
+  margin: 13px 23px 0 23px;
+}
+
 
 .cart-img {
   margin-right: 26px;
@@ -91,7 +90,7 @@ a {
   color: rgba(0, 0, 0, 0.3)
 }
 
-.active-page{
+.active-page {
   padding-bottom: 12px;
   border-bottom: 2px solid #fb565a;
 }
@@ -112,11 +111,14 @@ a {
 .header-slider {
   background-color: #eeeeee;
   display: flex;
-  height: 413px;
 }
 
 .slider {
   margin-left: 6px;
+}
+
+.slider img {
+  display: block;
 }
 
 .slider-buttons {
@@ -150,6 +152,7 @@ a {
   font-weight: 500;
   line-height: 1.13;
   margin-top: 40px;
+  margin-bottom: 50px;
 }
 
 .slider-buttons ul {
@@ -179,7 +182,7 @@ a {
 .catalog {
   display: flex;
   justify-content: space-between;
-  padding: 80px 0px  80px 0px;
+  padding: 81px 0px  80px 0px;
 }
 .catalog-sites,
 .catalog-apps,
@@ -190,7 +193,6 @@ a {
 .catalog-pres {
   margin-right: 61px;
 }
-
 
 .catalog p {
   width: 250px;
@@ -204,15 +206,13 @@ a {
 }
 
 .catalog-h1 {
-  height: 150px;
   font-size: 55px;
   font-weight: 500;
   line-height: 1;
   letter-spacing: normal;
   color: #000000;
   background-color: #eeeeee;
-  padding: 0;
-  padding-top: 72px;
+  padding: 74px 0 105px 0;
   text-align: center;
   margin: 0px;
 }
@@ -297,7 +297,6 @@ a {
 }
 
 .line {
-  width: 1160px;
   height: 2px;
   background-color: black;
   opacity: 0.2;
@@ -305,23 +304,28 @@ a {
 }
 
 .about-us-text {
-  margin-right: 150px;
+  margin-right: 140px;
 }
 
 .about-us-text h2 {
-  width: 650px;
-  height: 87px;
+  width: 660px;
   font-size: 45px;
   font-weight: 500;
   font-stretch: normal;
   line-height: 1;
+  margin: 0;
+  margin-top: 34px;
 }
 
 .about-us-text p {
   font-size: 16px;
   font-weight: normal;
   line-height: 1.5;
-  width: 616px
+  width: 616px;
+  display: inline-block;
+  margin-bottom: 0px;
+  margin-top: 35px;
+  vertical-align: middle;
 }
 
 .about-us-text h3 {
@@ -405,6 +409,7 @@ a {
   height: 2px;
   background-color: #fb565a;
 }
+
 /* Блок с логотипами партёров */
 .partners ul {
   display: flex;
@@ -418,42 +423,36 @@ a {
   opacity: 0.2;
 }
 
-.partners::before {
-  content: "";
-  display: block;
-  width: 1160px;
+.line-partners-top {
   height: 2px;
   background-color: black;
   opacity: 0.2;
   margin-bottom: 50px;
-  margin-top: 50px;
+  margin-top: 54px;
 }
 
-.partners::after {
-  content: "";
-  display: block;
-  width: 1160px;
+.line-partners-bottom {
   height: 2px;
   background-color: black;
   opacity: 0.2;
-  margin-bottom: 49px;
+  margin-bottom: 79px;
   margin-top: 35px;
 }
 
 .first {
-  margin: 13px 0px 0px 28px;
+  margin: -4px 0px 0px 28px;
 }
 
 .second {
-  margin: 3px 0px 0px -14px;
+  margin: -3px 0px 0px -14px;
 }
 
 .third {
-  margin: 8px 49px 0px 0px;
+  margin: -3px 49px 0px 0px;
 }
 
 .forth {
-  margin: 8px 40px 0px -38px;
+  margin: -3px 40px 0px -38px;
 }
 
 
@@ -466,6 +465,7 @@ a {
   opacity: 0.2;
   margin-left: 50px;
 }
+
 .second::after {
   content: "";
   display: block;
@@ -496,10 +496,6 @@ a {
   opacity: 0.1;
 }
 
-.partners {
-  height: 270px;
-}
-
 /* Карта */
 .inventory {
   position: relative;
@@ -519,10 +515,8 @@ a {
   background-color: white;
   bottom: 57px;
   width: 320px;
-  height: 310px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
 }
-
 
 .address-container {
   width: 220px;
@@ -533,6 +527,7 @@ a {
 .phone-number {
   display: inline-block;
   margin-top: 17px;
+  vertical-align: middle;
 }
 
 .address h2 {
@@ -560,8 +555,7 @@ a {
   border-radius: 2px;
   text-align: center;
   padding-top: 12px;
-  margin: 0 auto;
-  margin-top: 38px;
+  margin: 38px auto 50px auto;
   color: white;
   text-transform: uppercase;
 }
@@ -594,11 +588,6 @@ a {
   border: none;
   margin: 33px 0px 25px 0px;
   padding: 0px;
-}
-
-.button-filters{
-  margin-top: 16px;
-  text-transform: uppercase;
 }
 
 .label {
@@ -765,20 +754,21 @@ a {
   color: rgba(40, 49, 54, 0.3);
 }
 
-.filters button {
+.button-filters {
+  margin-top: 16px;
+  text-transform: uppercase;
   background-color: #eeeeee;
   font-weight: 500;
   line-height: 1.13;
   width: 260px;
   height: 50px;
-  border-radius: 5px;
 }
 
-.filters button:hover {
+.button-filters:hover {
   background-color: #dfdfdf;
 }
 
-.filters button:active {
+.button-filters:active {
   background-color: #d5d5d5;
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   color: rgba(0, 0, 0, 0.3);
@@ -820,7 +810,8 @@ a {
 .examples-header ul {
   display: flex;
   margin-top: 18px;
-  margin-left: 204px;
+  margin-left: auto;
+  padding-right: 22px;
 }
 
 .examples-header li {
@@ -889,7 +880,7 @@ a {
   text-align: center;
   margin: 0px 65px 0px 65px;
   max-width: 230px;
-  height: 36px;
+  vertical-align: middle;
 }
 
 .examples-popup .examples-h3 {
@@ -947,7 +938,6 @@ a {
 }
 
 /*Пагинация*/
-
 .pagination {
   display: flex;
   justify-content: space-between;
@@ -1008,12 +998,9 @@ a {
   width: 960px;
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
   position: fixed;
-  top: 710px;
-  left: 240px;
-}
-
-.fone-number {
-
+  bottom: 150px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .form-container {
@@ -1034,11 +1021,13 @@ a {
 .name-email label {
   display: inline-block;
   margin-bottom: 12px;
+  vertical-align: middle;
 }
 
 .name-email input {
   display: inline-block;
   margin-bottom: 12px;
+  vertical-align: middle;
 }
 
 .user-email {
@@ -1061,6 +1050,7 @@ a {
 .form-text label {
   display: inline-block;
   margin-bottom: 12px;
+  vertical-align: middle;
 }
 
 .form-offer h2 {
@@ -1090,8 +1080,6 @@ a {
   background-color: #e74246;
 }
 
-
-
 .form-offer button:active {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d7373b;
@@ -1105,14 +1093,13 @@ a {
   padding-left: 16px;
 }
 
-
 .form-offer input:hover,
-.form-text textarea:hover{
+.form-text textarea:hover {
   border: solid 2px #b4b9bb;
 }
 
 .form-offer input:focus,
-.form-text textarea:focus{
+.form-text textarea:focus {
   border: solid 2px #000000;
 }
 
@@ -1141,7 +1128,6 @@ a {
 /* Стили футура */
 .main-footer {
   background-color: white;
-  height: 217px;
 }
 
 .social-button {
@@ -1150,40 +1136,37 @@ a {
   padding-top: 25px;
 }
 
-
-footer li:hover {
+.main-footer li:hover {
   background-color: #e74246;
 }
 
-footer li:active {
+.main-footer li:active {
   background-color: #d7373b;
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
-footer li:active .social-button {
+.social-area:active .social-button {
   opacity: 0.3;
 }
 
 .footer-social {
   display: flex;
   padding: 0px;
-  margin: 64px 131px 0px -7px;
-  width: 273px;
+  margin: 64px 128px 0px -7px;
 }
 
-footer li {
+.main-footer li {
   display: block;
   width: 74px;
   height: 74px;
   background-color: #e1e1e1;
-  margin: 0 10px;
+  margin: 0 9px;
   border-radius: 50%;
 }
 
 .footer-friendship {
   width: 600px;
   font-size: 36px;
-  height: 35px;
   line-height: 1;
   font-weight: bold;
   margin-top: 68px;
@@ -1204,7 +1187,7 @@ footer li {
   margin-bottom: 76px;
 }
 
-footer .container {
+.main-footer .container {
   display: flex;
 }
 
@@ -1212,19 +1195,18 @@ footer .container {
   display: none;
 }
 
-
 /*Добавляетм анимацию*/
 @keyframes bounce {
-  0% { transform: translateY(-2000px); }
-  70% { transform: translateY(30px); }
-  90% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
+  0% { bottom: 2000px }
+  70% { bottom: 1000px }
+  90% { bottom: 500px }
+  100% { bottom: 300px }
 }
 
 @keyframes shake {
-  0%, 100%                { transform: translateX(0); }
+  0%, 100% { transform: translateX(0); }
   10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
-  20%, 40%, 60%, 80%      { transform: translateX(10px); }
+  20%, 40%, 60%, 80% { transform: translateX(10px); }
 }
 
 .form-error {

@@ -141,15 +141,16 @@
    <section>
     <h2 class="visually-hidden">Примеры работ</h2>
     <div class="examples-header">
+      <h3 class="visually-hidden">Сортировка</h3>
       <span>сортировать:</span>
       <ul>
-        <li>по цене</li>
-        <li>по типу</li>
-        <li>по названию</li>
+        <li aria-label="сортировка по цене">по цене</li>
+        <li aria-label="сортировка по типу сайта">по типу</li>
+        <li aria-label="сортировка по названию">по названию</li>
       </ul>
       <div class="examples-header-icons">
-        <img class="icon-down" src="img/icon-down-dir.svg" alt="icon-down">
-        <img class="icon-up" src="img/icon-up-dir.svg" alt="icon-up">
+        <img class="icon-down" src="img/icon-down-dir.svg" alt="icon-down" width="11" height="10" aria-label="сортировка от большего к меньшему">
+        <img class="icon-up" src="img/icon-up-dir.svg" alt="icon-up" width="11" height="10" aria-label="сортировка от меньшего к большему">
       </div>
     </div>
     <ul class="examples">
@@ -261,7 +262,7 @@
           ул. Б. Конюшенная, д. 19/8
           <a class="phone-number" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
         </p>
-        <a class="form-link" href="#" aria-label="открыть форму письма">Напишите нам</a>
+        <a class="form-link" href="writeus.html" aria-label="кнопка напишите нам">Напишите нам</a>
       </div>
     </div>
     <img class="map-marker" src="img/map-marker-png.png" alt="map-marker" width="231" height="190">
@@ -297,9 +298,9 @@
 <footer class="main-footer">
   <div class="container">
     <ul class="footer-social">
-      <li><a class="social-button" href="#" aria-label="вконтакте"><img src="img/vk-icon.svg" alt="vk" width="26" height="15"></a></li>
-      <li><a class="social-button" href="#" aria-label="facebook"><img src="img/fb-icon.svg" alt="fb" width="12" height="22"></a></li>
-      <li><a class="social-button" href="#" aria-label="instagram"><img src="img/insta-icon.svg" alt="instagram" width="21" height="21"></a></li>
+      <li class="social-area"><a class="social-button" href="#" aria-label="вконтакте"><img src="img/vk-icon.svg" alt="vk" width="26" height="15"></a></li>
+      <li class="social-area"><a class="social-button" href="#" aria-label="facebook"><img src="img/fb-icon.svg" alt="fb" width="12" height="22"></a></li>
+      <li class="social-area"><a class="social-button" href="#" aria-label="instagram"><img src="img/insta-icon.svg" alt="instagram" width="21" height="21"></a></li>
     </ul>
     <div class="footer-text">
       <p class="footer-friendship">Давайте дружить, это выгодно!</p>
@@ -307,6 +308,6 @@
     </div>
   </div>
 </footer>
-<script src="js/js.js"></script>
+<script src="js/minify-js.js"></script>
 </body>
 </html>
