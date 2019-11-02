@@ -762,6 +762,8 @@ a {
   line-height: 1.13;
   width: 260px;
   height: 50px;
+  border: none;
+  outline: none;
 }
 
 .button-filters:hover {
@@ -772,6 +774,7 @@ a {
   background-color: #d5d5d5;
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   color: rgba(0, 0, 0, 0.3);
+  outline: none;
 }
 
 .grid-li1 {
@@ -1045,6 +1048,7 @@ a {
   padding-left: 16px;
   padding-top: 14px;
   resize: none;
+  outline: none;
 }
 
 .form-text label {
@@ -1074,6 +1078,7 @@ a {
   text-transform: uppercase;
   margin-top: 40px;
   border: none;
+  outline: none;
 }
 
 .form-offer button:hover {
@@ -1084,6 +1089,7 @@ a {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
+  outline: none;
 }
 
 .form-offer input {
@@ -1091,6 +1097,7 @@ a {
   height: 50px;
   border: solid 2px #d7dcde;
   padding-left: 16px;
+  outline: none;
 }
 
 .form-offer input:hover,
@@ -1101,16 +1108,19 @@ a {
 .form-offer input:focus,
 .form-text textarea:focus {
   border: solid 2px #000000;
+  outline: none;
 }
 
 .form-offer input:invalid {
   border: solid 2px #e74246;
   color: #e74246;
+  outline: none;
 }
 
 .form-text textarea:invalid {
   border: solid 2px #e74246;
   color: #e74246;
+  outline: none;
 }
 
 .cross {
@@ -1197,16 +1207,16 @@ a {
 
 /*Добавляетм анимацию*/
 @keyframes bounce {
-  0% { bottom: 2000px }
-  70% { bottom: 1000px }
-  90% { bottom: 500px }
-  100% { bottom: 300px }
+  0% { bottom: 3000px }
+  70% { bottom: 2000px }
+  90% { bottom: 1000px }
+  100% { bottom: 500px }
 }
 
 @keyframes shake {
-  0%, 100% { transform: translateX(0); }
-  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
-  20%, 40%, 60%, 80% { transform: translateX(10px); }
+  0%, 100% { transform: translateX(-50%); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-52%); }
+  20%, 40%, 60%, 80% { transform: translateX(-48%); }
 }
 
 .form-error {
