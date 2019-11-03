@@ -182,7 +182,7 @@ a {
 .catalog {
   display: flex;
   justify-content: space-between;
-  padding: 81px 0px  80px 0px;
+  padding: 78px 0px  80px 0px;
 }
 .catalog-sites,
 .catalog-apps,
@@ -294,13 +294,10 @@ a {
 .about-us {
   display: flex;
   justify-content: space-between;
-}
-
-.line {
-  height: 2px;
-  background-color: black;
-  opacity: 0.2;
-  margin-bottom: 34px;
+  border-bottom: 2px solid #e1e1e1;
+  border-top: 2px solid #e1e1e1;
+  padding-top: 40px;
+  padding-bottom: 55px;
 }
 
 .about-us-text {
@@ -411,11 +408,16 @@ a {
 }
 
 /* Блок с логотипами партёров */
+.partners {
+  padding: 24px 0 23px 0;
+  border-bottom: 2px solid #e1e1e1;
+  margin-bottom: 80px;
+}
+
 .partners ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0;
 }
 
 .partners li {
@@ -423,36 +425,20 @@ a {
   opacity: 0.2;
 }
 
-.line-partners-top {
-  height: 2px;
-  background-color: black;
-  opacity: 0.2;
-  margin-bottom: 50px;
-  margin-top: 54px;
-}
-
-.line-partners-bottom {
-  height: 2px;
-  background-color: black;
-  opacity: 0.2;
-  margin-bottom: 79px;
-  margin-top: 35px;
-}
-
 .first {
-  margin: -4px 0px 0px 28px;
+  margin: 19px 0px 0px -6px;
 }
 
 .second {
-  margin: -3px 0px 0px -14px;
+  margin: 3px 0px 0px -14px;
 }
 
 .third {
-  margin: -3px 49px 0px 0px;
+  margin: 14px 49px 0px 11px;
 }
 
 .forth {
-  margin: -3px 40px 0px -38px;
+  margin: 11px 40px 0px -30px;
 }
 
 
@@ -504,6 +490,7 @@ a {
 .map {
   width: 100%;
   position: relative;
+  margin-top: 43px;
 }
 
 .map iframe {
@@ -619,6 +606,10 @@ a {
 
 .label-img  img{
   opacity: 0.4;
+}
+
+.filters {
+  margin-right: 140px;
 }
 
 .filters legend {
@@ -792,7 +783,8 @@ a {
   text-transform: uppercase;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 41px;
+  margin-bottom: auto;
+  min-height: 92px;
 }
 
 .examples {
@@ -800,6 +792,8 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 760px;
+  padding: 0;
+  margin: 0;
 }
 
 .examples-header span {
@@ -807,14 +801,19 @@ a {
   font-weight: bold;
   line-height: 1;
   margin-top: 17px;
-  margin-left: 40px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .examples-header ul {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 18px;
   margin-left: auto;
+  padding: 0;
+  padding-left: 20px;
   padding-right: 22px;
+  max-width: 540px;
 }
 
 .examples-header li {
@@ -945,6 +944,7 @@ a {
   display: flex;
   justify-content: space-between;
   width: 440px;
+  padding: 0;
   margin-top: 24px;
 }
 
@@ -1161,8 +1161,10 @@ a {
 
 .footer-social {
   display: flex;
+  flex-wrap: wrap;
   padding: 0px;
   margin: 64px 128px 0px -7px;
+  max-width: 600px;
 }
 
 .main-footer li {
@@ -1170,7 +1172,7 @@ a {
   width: 74px;
   height: 74px;
   background-color: #e1e1e1;
-  margin: 0 9px;
+  margin: 9px 9px;
   border-radius: 50%;
 }
 
